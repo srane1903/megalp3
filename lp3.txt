@@ -1,0 +1,293 @@
+### 1. Fibonacci Sequence
+- *Q*: What is the time complexity of the recursive Fibonacci function?
+  - *A*: The time complexity is exponential, \( O(2^n) \), because each function call branches into two more calls.
+
+- *Q*: How does dynamic programming improve Fibonacci calculation?
+  - *A*: Dynamic programming stores previously computed Fibonacci values, reducing redundant calculations, making it \( O(n) \).
+
+---
+
+### 2. Job Sequencing with Deadlines
+- *Q*: Why do we use the greedy method for job sequencing?
+  - *A*: The greedy method allows us to maximize profit by selecting jobs with the highest profit within the given deadline, an efficient approach for this optimization problem.
+
+- *Q*: What would happen if jobs were not sorted by profit?
+  - *A*: Without sorting by profit, the greedy choice may not yield an optimal solution, as higher-profit jobs may be missed.
+
+---
+
+### 3. Fractional Knapsack Problem
+- *Q*: What is the difference between fractional and 0-1 knapsack?
+  - *A*: In fractional knapsack, items can be divided, so portions can be included, whereas in 0-1 knapsack, items are indivisible.
+
+- *Q*: Why is the fractional knapsack problem solvable by a greedy algorithm?
+  - *A*: Because we can choose fractions of items, we can continually select the highest value-to-weight ratio, making the greedy approach optimal.
+
+---
+
+### 4. 0-1 Knapsack Problem
+- *Q*: Why do we use dynamic programming for 0-1 knapsack?
+  - *A*: Dynamic programming helps solve the problem by breaking it into overlapping subproblems, enabling us to find the maximum value without re-evaluating choices.
+
+- *Q*: What is the time complexity of the 0-1 knapsack dynamic programming approach?
+  - *A*: The time complexity is \( O(nW) \), where \( n \) is the number of items and \( W \) is the maximum weight.
+
+---
+
+### 5. Binomial Coefficients
+- *Q*: How are binomial coefficients used in combinatorics?
+  - *A*: Binomial coefficients calculate the number of ways to choose subsets from a set, such as in combinations, given by \( C(n, k) = \frac{n!}{k!(n-k)!} \).
+
+- *Q*: What approach is used to calculate binomial coefficients efficiently?
+  - *A*: Dynamic programming is used to avoid redundant calculations by storing previously computed values in Pascal’s triangle.
+
+---
+
+### 6. 8-Queens Problem
+- *Q*: Why is backtracking suitable for the 8-Queens problem?
+  - *A*: Backtracking efficiently explores possible queen placements and retracts incorrect choices, making it ideal for constraint satisfaction problems.
+
+- *Q*: What is the time complexity of solving the 8-Queens problem?
+  - *A*: In the worst case, it is \( O(N!) \) for an \( N \)-Queens problem due to exploring all potential queen placements.
+
+---
+
+### 7. Matrix Multiplication and Multi-threading
+- *Q*: How does multi-threading improve matrix multiplication?
+  - *A*: Multi-threading allows simultaneous calculation of matrix cells or rows, reducing execution time by utilizing multiple processors.
+
+- *Q*: What challenges arise with multi-threaded matrix multiplication?
+  - *A*: Synchronization and managing thread safety can be challenging, as concurrent access to shared resources needs to be carefully controlled.
+
+---
+
+### 8. Uber Ride Price Prediction
+- *Q*: What is linear regression, and why is it used here?
+  - *A*: Linear regression predicts a continuous target variable based on one or more features. It’s used here to model the relationship between ride distance and price.
+
+- *Q*: How is model performance measured in regression?
+  - *A*: Common metrics are Mean Squared Error (MSE), Root Mean Squared Error (RMSE), and R-squared (R²) to evaluate prediction accuracy.
+
+---
+
+### 9. Email Spam Detection
+- *Q*: Why are k-NN and SVM suitable for spam detection?
+  - *A*: k-NN classifies emails based on similarity to labeled data, and SVM finds the optimal boundary to separate spam from non-spam, both effective for binary classification.
+
+- *Q*: What are some limitations of k-NN in large datasets?
+  - *A*: k-NN can be computationally expensive and slow with large datasets, as it calculates the distance to all other points for each classification.
+
+---
+
+### 10. Bank Customer Churn Prediction
+- *Q*: What is a neural network, and how does it predict churn?
+  - *A*: A neural network is a set of connected layers of nodes that learn from data to make predictions. It classifies whether a customer will churn based on historical data.
+
+- *Q*: What is a confusion matrix, and why is it used?
+  - *A*: A confusion matrix shows the counts of true positives, false positives, true negatives, and false negatives, helping evaluate the classifier’s accuracy.
+
+---
+
+### 11. Gradient Descent
+- *Q*: What is the purpose of the gradient descent algorithm?
+  - *A*: Gradient descent minimizes a function by iteratively adjusting parameters in the direction of the negative gradient, finding the function’s minimum.
+
+- *Q*: What factors affect the convergence of gradient descent?
+  - *A*: The learning rate affects convergence; a high rate may overshoot, and a low rate can slow down the process.
+
+---
+
+### 12. Diabetes Prediction with k-NN
+- *Q*: How does k-NN work for diabetes prediction?
+  - *A*: k-NN assigns a diabetes label to a patient based on the majority class of the k-nearest neighbors in a labeled dataset.
+
+- *Q*: What metrics are used to evaluate k-NN classification?
+  - *A*: Accuracy, precision, recall, and the confusion matrix are used to evaluate performance.
+
+---
+
+### 13. K-Means Clustering
+- *Q*: What is K-Means clustering?
+  - *A*: K-Means is an unsupervised learning algorithm that partitions data into k clusters by minimizing the distance between data points and their cluster centroids.
+
+- *Q*: How is the optimal number of clusters chosen?
+  - *A*: The elbow method is used by plotting within-cluster sum of squares and selecting the k where the decrease slows, indicating optimal clustering.
+
+---
+
+### 14. Stock Price Prediction or Titanic Survival Analysis
+- *Q*: What factors affect stock price prediction accuracy?
+  - *A*: Market trends, historical volatility, and external factors like news and economic indicators affect prediction accuracy.
+
+- *Q*: How does classification differ from regression?
+  - *A*: Classification assigns discrete labels (e.g., survived/not survived), while regression predicts continuous values (e.g., stock price).
+
+---
+
+### 15. Metamask Installation
+- *Q*: What is Metamask, and why is it used?
+  - *A*: Metamask is a cryptocurrency wallet that enables interaction with Ethereum and other blockchains, allowing users to manage digital assets.
+
+- *Q*: What is a transaction fee or gas in Ethereum?
+  - *A*: Gas is a fee required to perform transactions on Ethereum, paid to incentivize miners to include the transaction in the blockchain.
+
+---
+
+### 16. Create a Wallet with Metamask
+- *Q*: What is the importance of a wallet in cryptocurrency?
+  - *A*: A wallet stores private and public keys, allowing secure storage, transfer, and receipt of digital assets.
+
+- *Q*: What is the difference between hot and cold wallets?
+  - *A*: Hot wallets are connected to the internet, enabling quick transactions, while cold wallets are offline, offering greater security.
+
+---
+
+### 17. Smart Contract for Bank Account Operations
+- *Q*: What is a smart contract?
+  - *A*: A smart contract is a self-executing contract on the blockchain, where terms are directly written into code, enabling secure and automated transactions.
+
+- *Q*: What is gas in Ethereum, and why is it important?
+  - *A*: Gas limits the computational work a transaction can do, ensuring that complex contracts cannot overload the network without sufficient fees.
+
+---
+
+### 18. Smart Contract for Student Data
+- *Q*: How are structures used in Solidity?
+  - *A*: Structures in Solidity group different data types under one name, useful for organizing related data like student records.
+
+- *Q*: What is a fallback function in Solidity?
+  - *A*: A fallback function is a default function in a contract that is called when no other function matches or when Ether is sent to the contract.
+
+---
+
+### 19. Blockchain Types and Use Cases
+- *Q*: What are the types of blockchain networks?
+  - *A*: Public (accessible to anyone), private (restricted access), and hybrid (combination of both) are the main types.
+
+- *Q*: Why are public blockchains considered secure?
+  - *A*: Public blockchains have decentralized, distributed records that are immutable, making tampering nearly impossible.
+
+-------------------------------------------------------------------------------------------------------------------
+
+[3:59 pm, 7/11/2024] Shravani Rane: ### 1. *Data Preprocessing and Analysis*
+   - *Definition*: Data preprocessing is the process of preparing raw data to improve the quality and efficiency of a machine learning model.
+   - *Steps in Preprocessing*:
+     - *Handling Missing Data*: Fill in missing values using methods like mean, median, or using algorithms to predict missing values.
+     - *Outlier Detection*: Identify unusual data points that may skew the model, like using Z-scores or IQR.
+     - *Encoding Categorical Data*: Transform categorical variables into numeric formats (e.g., one-hot encoding).
+     - *Feature Scaling*: Normalize or standardize data to ensure all features contribute equally to the model.
+   - *Importance*: Cleaning and formatting data enhances model accuracy and reduce…
+[4:01 pm, 7/11/2024] Shravani Rane: Based on your lab manual, here’s a detailed breakdown of each practical experiment, covering *what* is done, *how* it is implemented, and *why* it is important. This will give you a structured understanding of each experiment.
+
+### 1. *Fibonacci Sequence (CO4, CO5)*
+   - *What*: Write a program to calculate Fibonacci numbers and find the step count.
+   - *How*: Implement the Fibonacci sequence using both recursive and dynamic programming methods.
+     - *Recursive*: Uses function calls for each Fibonacci term.
+     - *Dynamic Programming*: Stores previous results to avoid redundant calculations.
+   - *Why*: Understanding recursive and optimized dynamic programming approaches helps in analyzing algorithm efficiency, focusing on time and space complexity.
+
+### 2. *Job Sequencing with Deadlines (CO4, CO5)*
+   - *What*: Implement job sequencing using a greedy algorithm.
+   - *How*: Sort jobs by profit, assign each to the latest available slot before its deadline.
+   - *Why*: This problem teaches efficient scheduling and optimization, a key aspect of greedy algorithms.
+
+### 3. *Fractional Knapsack Problem (CO4, CO5)*
+   - *What*: Solve the fractional knapsack problem using a greedy algorithm.
+   - *How*: Calculate value-to-weight ratio for each item, sort items by this ratio, and add them to the knapsack until it’s full.
+   - *Why*: Highlights the greedy approach to solve optimization problems, applicable in resource allocation.
+
+### 4. *0-1 Knapsack Problem (CO4, CO5)*
+   - *What*: Solve the 0-1 knapsack problem using dynamic programming.
+   - *How*: Use a 2D array to store maximum values for each item-weight combination.
+   - *Why*: Dynamic programming is crucial for solving problems where decisions are interdependent, and this approach helps reduce redundant calculations.
+
+### 5. *Binomial Coefficients (CO4, CO5)*
+   - *What*: Generate binomial coefficients using dynamic programming.
+   - *How*: Implement Pascal’s triangle using dynamic programming to efficiently calculate coefficients.
+   - *Why*: Understanding binomial coefficients is essential in probability, combinatorics, and algorithm analysis.
+
+### 6. *8-Queens Problem (CO4, CO5)*
+   - *What*: Solve the 8-Queens problem using backtracking.
+   - *How*: Place queens row by row, backtracking when conflicts occur.
+   - *Why*: Teaches backtracking—a powerful algorithm design technique for constraint satisfaction problems.
+
+### 7. *Matrix Multiplication and Multi-threading (CO4, CO5)*
+   - *What*: Implement matrix multiplication and analyze multithreaded performance.
+   - *How*: Use one thread per row/cell and compare time efficiency with sequential multiplication.
+   - *Why*: Demonstrates performance gains of multithreading, essential in optimizing computational tasks.
+
+### 8. *Uber Ride Price Prediction (CO1, CO2, CO3)*
+   - *What*: Predict Uber ride prices using linear regression and random forest models.
+   - *How*: 
+     - Preprocess dataset by handling outliers and checking correlations.
+     - Implement and evaluate models based on R² and RMSE.
+   - *Why*: Teaches regression model evaluation, essential for machine learning applications in pricing and forecasting.
+
+### 9. *Email Spam Detection (CO1, CO2, CO3)*
+   - *What*: Classify emails as spam or not using k-NN and SVM.
+   - *How*: Use labeled dataset (emails.csv), split data for training/testing, and evaluate models on accuracy and precision.
+   - *Why*: Introduction to classification techniques; spam detection is a practical use case for supervised learning.
+
+### 10. *Bank Customer Churn Prediction (CO1, CO2, CO3)*
+   - *What*: Build a neural network to predict customer churn.
+   - *How*:
+     - Preprocess and normalize the dataset.
+     - Split data, build a neural network model, and evaluate using accuracy and confusion matrix.
+   - *Why*: Neural networks are powerful for classification tasks; churn prediction is valuable in customer relationship management.
+
+### 11. *Gradient Descent Algorithm (CO1, CO2, CO3)*
+   - *What*: Use gradient descent to find the local minima of a function.
+   - *How*: Implement gradient descent on a function, e.g., \(y = (x + 3)^2\).
+   - *Why*: Fundamental optimization technique in machine learning, helping understand convergence in models.
+
+### 12. *Diabetes Prediction with k-NN (CO1, CO2, CO3)*
+   - *What*: Implement k-NN to classify diabetes patients.
+   - *How*: Train the k-NN model using diabetes.csv, compute accuracy, confusion matrix, and evaluate error rate, precision, and recall.
+   - *Why*: Essential supervised learning task in healthcare, teaching evaluation metrics for classification models.
+
+### 13. *K-Means Clustering (CO1, CO2, CO3)*
+   - *What*: Apply K-Means or hierarchical clustering on a sales dataset.
+   - *How*: Use the elbow method to determine clusters, visualize clusters.
+   - *Why*: Unsupervised learning application, important for customer segmentation and market analysis.
+
+### 14. *Stock Price Prediction or Titanic Survival Analysis (CO1, CO2, CO3)*
+   - *What*: Predict future stock prices or survival on the Titanic using ML models.
+   - *How*:
+     - For stock prediction, preprocess historical data, use regression.
+     - For Titanic survival, use classification algorithms like decision trees.
+   - *Why*: Teaches end-to-end project development using ML, handling real-world datasets.
+
+### 15. *Metamask Installation (CO6)*
+   - *What*: Install Metamask and study Ether transactions.
+   - *How*: Set up the Metamask extension, create a wallet, observe transaction fees.
+   - *Why*: Introduces blockchain basics and how cryptocurrencies operate within a wallet.
+
+### 16. *Create a Wallet with Metamask (CO6)*
+   - *What*: Create a cryptocurrency wallet on Metamask.
+   - *How*: Follow steps to set up and secure a wallet, handle transactions.
+   - *Why*: Fundamental for understanding blockchain interactions and digital asset management.
+
+### 17. *Smart Contract for Bank Account Operations (CO6)*
+   - *What*: Write a Solidity smart contract for basic bank operations.
+   - *How*:
+     - Code deposit, withdrawal, and balance-check functions.
+     - Deploy on test network, observe gas fees.
+   - *Why*: Provides a practical introduction to smart contracts, fundamental for decentralized applications.
+
+### 18. *Smart Contract for Student Data (CO6)*
+   - *What*: Develop a smart contract to manage student data with Solidity.
+   - *How*: Use structures, arrays, and a fallback function, deploy and observe fees.
+   - *Why*: Teaches blockchain data management, useful in creating decentralized record systems.
+
+### 19. *Blockchain Types and Use Cases (CO6)*
+   - *What*: Write a survey on types of blockchains and real-world applications.
+   - *How*: Research public, private, and hybrid blockchains, document examples.
+   - *Why*: Helps in understanding blockchain applications, key to assessing its potential in industries.
+
+### 20. *Mini Project: E-Voting System dApp (CO6)*
+   - *What*: Create a decentralized application (dApp) for an e-voting system.
+   - *How*:
+     - Use blockchain principles to allow secure, anonymous voting.
+     - Implement using smart contracts to record votes transparently.
+   - *Why*: Demonstrates a real-world blockchain application, showcasing how blockchain can be used for secure and decentralized systems.
+
